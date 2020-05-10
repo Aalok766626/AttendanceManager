@@ -40,19 +40,17 @@ html {
     transform:translate(-50%, -50%);
   }
   
-#spn{
+ #spn{
     margin:300px 550px;
-}
-h1{
+ }
+ h1{
   font-family: 'Permanent Marker', cursive;
 
   /*font-family: 'Rye', cursive;*/
 
-  
-
   text-align: center;
   font-size: 30px;
-}
+ }
   
   @keyframes slide {
     0% {
