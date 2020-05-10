@@ -81,11 +81,11 @@ html {
       color:floralwhite;
   }
   .modal-body{
-      background: grey;
-      color: floralwhite;
+      background: #e6ebeb;
+      color: black;
   }
   .borders{
-      background-color: grey
+      background-color: #e6ebeb;
       color: black;
       font-weight: 500;
       border-radius: 5%;
