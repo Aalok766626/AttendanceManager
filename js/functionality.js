@@ -1,6 +1,6 @@
 function validatte(){
-    var str1=document.getElementById("inputemail").value;
-    var str2=document.getElementById("inputpass").value;
+    var roll=document.getElementById("inputemail").value;
+    var pass=document.getElementById("inputpass").value;
     var rem=document.getElementById("val").value;
     var year=document.getElementById("year").value;
     var details="Name: "+str1+"\n"+"Roll No.: "+str2+"\n"+"Year: "+year+"\n"+"Remember me: "+rem+"\n";
