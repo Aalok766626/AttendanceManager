@@ -42,8 +42,8 @@
                                 <input type="text" class="form-control form-control-sm mr-1" id="inputpass" name="inputpass" placeholder="Enter Roll No."> 
 							</div>
                             <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input">
+                                <div class="form-check" >
+                                    <input type="checkbox" class="form-check-input" id="val" value="off" onclick="valuech()">
                                     <label class="form-check-label">Remember me</label>
                                 </div>
                             </div>
@@ -52,17 +52,17 @@
 							<div >
 								<label for="years" class="borders">Select Year:</label>
 								<select name="year" id="year" class="yearoption">
-									<option value="1">First Year</option>
-									<option value="2">Second Year</option>
-									<option value="3">Third Year</option>
-									<option value="4">Final Year</option>
-									<option value="5">Super Final Year</option>
+									<option value="First Year">First Year</option>
+									<option value="Second Year">Second Year</option>
+									<option value="Third Year">Third Year</option>
+									<option value="Final Year">Final Year</option>
+									<option value="Super Final Year">Super Final Year</option>
 								</select>
 							</div>
 						</div>
                         <div class="form-row">
                             <button type="button" class="btn btn-danger btn-md ml-auto" data-dismiss="modal" >Cancel</button>
-                            <button type="button" class="btn btn-dark btn-md ml-1">Login</button>
+                            <button type="button" class="btn btn-dark btn-md ml-1" onClick="validatte()" id="log">Login</button>
 						</div>
 						<hr>
 						<small class="text-center"><strong>Note:</strong> Please enter correct details for better result !!</small>
@@ -76,6 +76,19 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function validatte(){
+            var str1=document.getElementById("inputemail").value;
+            var str2=document.getElementById("inputpass").value;
+            var rem=document.getElementById("val").value;
+            var year=document.getElementById("year").value;
+            var details="Name: "+str1+"\n"+"Roll No.: "+str2+"\n"+"Year: "+year+"\n"+"Remember me: "+rem+"\n"+"Confirm your details";
+            alert("Please confirm your details."+"\n"+details+"\n"+"Press OK to continue...\n");
+        }
+        function valuech(){
+            document.getElementById("val").value="on"
+        }
+    </script>
 </body>
 	
 </html>
