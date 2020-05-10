@@ -3,3 +3,10 @@ $(document).ready(function(){
            $("#login").modal('show');
         },1500);
     });
+
+
+$(document).ready(function(){
+    $("#loginBtn").click(function(){
+        $("#login").modal('show');
+    });
+});
