@@ -168,9 +168,9 @@ h3{
 @media only screen and (max-width: 1000px){
     .avatar {
   margin-top: 5%;
-  margin-left: 35%; 
-  height: 120px;
-  width: 120px;
+  margin-left: 38%; 
+  height: 27%;
+  width: 20%;
   background-color: #fff;
   border-radius: 50%;
 }
