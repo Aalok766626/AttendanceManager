@@ -1,12 +1,17 @@
 $(document).ready(function(){
-        setTimeout(function(){
-           $("#login").modal('show');
-        },1500);
-    });
-
+   $("#loginBtn").click(function(){
+       $("#login").modal('show');
+   });
+});
 
 $(document).ready(function(){
-    $("#loginBtn").click(function(){
-        $("#login").modal('show');
-    });
+   setTimeout(function(){
+      $("#someidlikeloginabove").modal('show');
+   },1500);
+});
+
+$(document).ready(function(){
+   $("#registerBtn").click(function(){
+       $("#registeration").modal('show');
+   });
 });
