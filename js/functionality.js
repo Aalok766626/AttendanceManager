@@ -7,6 +7,7 @@ function validatte(){
     if(rollvalidator(roll)&&passvalidator(pasword))
     {
         window.confirm("Please confirm your details."+"\n\n"+details+"\n"+"Press OK to continue...\n");
+        $("#login").modal('hide');
         window.location="Second_Sem.html";
     }
     else{
@@ -76,7 +77,8 @@ function validatte_registration(){
         }
         else
         {
-           alert("Hurray! Registration successful\nPlease login with your credentials\nThank you..!")
+           alert("Hurray! Registration successful\nPlease login with your credentials\nThank you..!");
+           $("#registeration").modal('hide'); 
         }
     }
 }
